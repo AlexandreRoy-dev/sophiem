@@ -37,13 +37,14 @@
       <div class="absolute inset-0 bg-gradient-to-t from-[#000e35] via-[#000e35]/60 to-transparent"></div>
     </div>
 
-    <nav class="absolute top-0 w-full z-50 pt-8 px-6 lg:px-12">
+<nav class="absolute top-0 w-full z-50 pt-8 px-6 lg:px-12">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         
-        <div class="flex-shrink-0 relative z-[60]">
+        <div class="flex-shrink-0 relative z-[60] flex flex-col items-start gap-1">
           <span class="text-xl md:text-2xl font-light tracking-widest text-white uppercase">
             Sophie <span class="font-bold text-[#660000]">Manzerolle</span>
           </span>
+          <img src="./public/professionnel.svg" alt="Remax Professionnel" class="h-10 md:h-16 w-auto opacity-90" />
         </div>
         
         <div class="hidden md:flex items-center gap-10 text-[11px] uppercase tracking-[0.15em] text-white font-medium">
@@ -102,17 +103,14 @@
       </div>
 
       <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 text-white">
-        <div class="text-center">
-          <span class="block text-3xl font-light mb-1">Remax</span>
-          <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Groupe Immobilier</span>
-        </div>
+        
         <div class="text-center">
           <span class="block text-3xl font-light mb-1">Estrie</span>
           <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Secteur d'expertise</span>
         </div>
         <div class="text-center">
           <span class="block text-3xl font-light mb-1">100%</span>
-          <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Dévouement</span>
+          <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Dévouée</span>
         </div>
       </div>
 
@@ -450,7 +448,7 @@
         
         <div class="space-y-10 border-l border-[#660000]/40 pl-8">
           <div class="group cursor-pointer">
-            <p class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-medium mb-2"> Téléphone direct</p>
+            <p class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-medium mb-2">Téléphone direct</p>
             <a href="tel:4388804685" class="text-white font-serif text-2xl lg:text-3xl font-light group-hover:text-[#660000] transition-colors duration-300 pointer-events-auto">(438) 880-4685</a>
           </div>
           
@@ -461,7 +459,13 @@
           
           <div class="group cursor-pointer">
             <p class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-medium mb-2">Bureau d'attache</p>
-            <p class="text-white font-serif text-xl lg:text-2xl font-light group-hover:text-[#660000] transition-colors duration-300">Remax Professionnel</p>
+            <p class="text-white font-serif text-xl lg:text-2xl font-light group-hover:text-[#660000] transition-colors duration-300 mb-2">Remax Professionnel</p>
+            <div class="text-white/70 text-sm font-light leading-relaxed">
+              <p>Siège social Granby</p>
+              <p>1050 rue Principale</p>
+              <p>Granby, Québec, J2J 2N7</p>
+              <a href="tel:4503784120" class="hover:text-[#660000] transition-colors mt-1 inline-block pointer-events-auto">Bur.: (450) 378-4120</a>
+            </div>
           </div>
         </div>
       </div>
@@ -469,25 +473,25 @@
       <div class="relative lg:mt-0 z-40 pointer-events-auto">
         <div class="absolute -inset-4 border border-white/10 z-0 hidden md:block translate-x-4 translate-y-4 pointer-events-none"></div>
         
-        <form class="relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 p-10 lg:p-14 shadow-2xl pointer-events-auto">
+        <form action="https://formspree.io/f/mdapgdea" method="POST" class="relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 p-10 lg:p-14 shadow-2xl pointer-events-auto">
           <div class="space-y-10">
             <div class="relative group">
-              <input type="text" id="final_name" class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors peer placeholder-transparent font-light" placeholder="Votre nom complet">
+              <input type="text" id="final_name" name="nom" required class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors peer placeholder-transparent font-light" placeholder="Votre nom complet">
               <label for="final_name" class="absolute left-0 -top-3.5 text-[10px] uppercase tracking-widest text-white/40 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/30 peer-placeholder-shown:top-3 peer-placeholder-shown:normal-case peer-placeholder-shown:tracking-normal peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:uppercase peer-focus:tracking-widest peer-focus:text-[#660000] pointer-events-none">Nom complet</label>
             </div>
             
             <div class="relative group">
-              <input type="email" id="final_email" class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors peer placeholder-transparent font-light" placeholder="votre@email.com">
+              <input type="email" id="final_email" name="email" required class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors peer placeholder-transparent font-light" placeholder="votre@email.com">
               <label for="final_email" class="absolute left-0 -top-3.5 text-[10px] uppercase tracking-widest text-white/40 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/30 peer-placeholder-shown:top-3 peer-placeholder-shown:normal-case peer-placeholder-shown:tracking-normal peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:uppercase peer-focus:tracking-widest peer-focus:text-[#660000] pointer-events-none">Adresse courriel</label>
             </div>
             
             <div class="relative group">
-              <input type="tel" id="final_phone" class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors peer placeholder-transparent font-light" placeholder="819 000 0000">
+              <input type="tel" id="final_phone" name="telephone" required class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors peer placeholder-transparent font-light" placeholder="819 000 0000">
               <label for="final_phone" class="absolute left-0 -top-3.5 text-[10px] uppercase tracking-widest text-white/40 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/30 peer-placeholder-shown:top-3 peer-placeholder-shown:normal-case peer-placeholder-shown:tracking-normal peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:uppercase peer-focus:tracking-widest peer-focus:text-[#660000] pointer-events-none">Numéro de téléphone</label>
             </div>
             
             <div class="relative group pt-4">
-              <textarea id="final_message" rows="4" class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors resize-none peer placeholder-transparent font-light" placeholder="Décrivez votre projet..."></textarea>
+              <textarea id="final_message" name="message" rows="4" required class="w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#660000] transition-colors resize-none peer placeholder-transparent font-light" placeholder="Décrivez votre projet..."></textarea>
               <label for="final_message" class="absolute left-0 -top-0.5 text-[10px] uppercase tracking-widest text-white/40 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/30 peer-placeholder-shown:top-6 peer-placeholder-shown:normal-case peer-placeholder-shown:tracking-normal peer-focus:-top-0.5 peer-focus:text-[10px] peer-focus:uppercase peer-focus:tracking-widest peer-focus:text-[#660000] pointer-events-none">Votre projet</label>
             </div>
             
